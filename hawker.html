@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+    
+    <html>  
+        <head>
+            <title> Tourist guide to Singapore</title>
+            <link rel="stylesheet" href="hawker.css">
+        </head>
+        
+        <body>
+            <script src="index.js"></script>
+            
+            
+<!-----------------------------------Main navigation----------------------------------->
+            <nav>
+                <div class="logo">
+                    <h1 class="logo-text"><a href="index.html">Singapore Tourist Guide</a></h1>
+                </div>
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li class="explore-dd">
+                            <a href="#">Explore</a>
+                            <i class="fa fa-caret-down"></i>
+                            <ul> 
+                                <li><a href="directory.html">Food &#38; Drink</a></li>
+                                <li><a href="#">Activities</a></li>
+                                <li><a href="#">Hidden Gems</a></li>
+                                <li><a href="#">Evening</a></li>
+                                <li><a href="#">Other</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html"> Contact</a></li>
+                    </ul>
+                <span onclick="openNav()" class="start-exploring-btn">Start Exploring</span>
+            </nav>
+            
+<!-----------------------------------Overlay Section----------------------------------->
+           
+            <div id="page-overlay" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="directory.html">Food &#38; Drink</a>
+                    <a href="#">Activities</a>
+                    <a href="#">Hidden Gems</a>
+                    <a href="#">Evening</a>
+                    <a href="#">Other</a>
+                </div>
+            </div>
+            
+<!-----------------------------------Overlay Section [END]----------------------------------->
+
+<!-----------------------------------Corona banner----------------------------------->
+
+            <h4 class="corona-banner">
+            The Coronavius might impact some attractions - Please check before you visit
+            </h4>
+<!-----------------------------------Corona banner [END]----------------------------------->
+ 
+<!-----------------------------------Heading Area----------------------------------->
+            <div class="page-heading">
+                <h1>Hawker Centers </h1>
+            </div>
+<!-----------------------------------Heading Area [END]----------------------------------->
+
+<!-----------------------------------Initial Section----------------------------------->
+            <div class="main-photo-holder">
+                <div class="main-photo">
+                    <img src="hawker-center-photos/hawker.svg">
+                </div>
+            </div>
+            <div class="main-holder">
+                <div class="text-holder">
+                    <div class="text-area">
+                        <div class="initial-text">
+                            <h2>Hawker Centers</h2>
+                            <p>Where can travelers taste good local food at resonable prices in Singapore? The answer is simple - hawker centres (also known as food courts). Get a taste of Singapore with a wide variety of local dishes ranging from Chicken Rice to Chilli Crab and Bak Kut Teh. There are hundreds of food courts and thousands of food stalls in Singapore so there's something for everyone!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-----------------------------------Initial Section [END]----------------------------------->
+
+<!-----------------------------------Stats----------------------------------->
+            <div class="stats-holder">
+                <div class="stats">
+                    <div class="stats-text">
+                        <div class="cheap">
+                            <img src="icons/money-icon.svg">
+                            <h3>Cheap</h3>
+                            <p>Around $3-$5 per meal</p>
+                        </div>
+                        <div class="wide">
+                            <img src="icons/noodles.svg" style="width: 27%;">
+                            <h3>Wide Variety</h3>
+                            <p>Over 3,000 food stalls</p>
+                        </div>
+                        <div class="top-rated">
+                            <img src="icons/top-rated.svg">
+                            <h3>Top Rated</h3>
+                            <p>Very popular destination</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-----------------------------------Stats [END]----------------------------------->
+            
+<!-----------------------------------Photo Gallery----------------------------------->
+            <div class="photo-gallery-area">
+                <div class="gallery-section">
+                    <div class="gallery-area">
+                        <div class="destination-gallery-holder">
+                            <div class="destination-gallery">
+                                <div class="gallery-highlight">
+                                    <img id="expandedImg" src="hawker-center-photos/hawker-center1.jpg" style="width: 100%">
+                                </div>
+                                <div class="image-preview">
+                                    <img id="smallImg" src="hawker-center-photos/hawker-center1.jpg" alt="photo of crowded hawker center" onclick="myFunction(this)">
+                                    <img id="smallImg" src="hawker-center-photos/hawker-center2.jpg" alt="people eating in a hawker canter" onclick="myFunction(this)" >
+                                    <img id="smallImg" src="hawker-center-photos/hawker-center3.jpg" alt="hawker center food menu" onclick="myFunction(this)">
+                                    <img id="smallImg" src="hawker-center-photos/hawker-center4.jpg" alt="people looking at hawker stalls" onclick="myFunction(this)">
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-text-holder">
+                        <div class="gallery-text">
+                            <h2>Key information</h2>
+                            <h3 style="font-weight: 600;">Arriving</h3>
+                            <p>Before you embark on your Hawker food adventure, be sure to save yourseslf a seat by placing a packet of tissues on the table. This let's other people know that you have reserved the table whilst you are going to get your food. Some Hawkers sell napkins at the entrance, however we recommend bringing your own.</p>
+                            <br>
+                            <h3 style="font-weight: 600;">Food Hunting</h3>
+                            <p>Now the fun part, selecting your food! There are plenty of options to choose from so you won't be struggling for choice. Typically, food stalls will number their dishes so take note of the dish number and let the cashier know. Unless the stall specifies, most hawkers are self-service which means you need to stand and wait for your food.<i>*Take a look at our recommended dishes below</i></p>
+                            <br>
+                            <h3 style="font-weight: 600;">Leaving</h3>
+                            <p>Once you have enjoyed your delecious food, be sure to pack your dishes on a tray and leave them at the tray deposit area. Some hawkers have people walk around and collect trays but the majority don't.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+<!-----------------------------------Photo Gallery [END]----------------------------------->
+<!-----------------------------------Food Suggestions----------------------------------->
+            <div class="menu-section">
+                <div class="menu-holder">
+                    <h2>Top Recommended Dishes</h2>
+                    <div class="menu">
+                        <div class="food-1">
+                            <img src="hawker-center-photos/food1.png">
+                            <h3>Chicken Rice</h3>
+                            <p>Singapore's Most Popular Dish</p>
+                            <br>
+                            <p><i>$3.50 - $6 On average</i></p>
+                        </div>
+                        <div class="food-2">
+                            <img src="hawker-center-photos/food2.png">
+                            <h3>Satay (Beef or Chicken)</h3>
+                            <p>Favourite Indonesian dish</p>
+                            <br>
+                            <p><i>$2 - $5.50 On average</i></p>
+                        </div>
+                        <div class="food-3">
+                            <img src="hawker-center-photos/food3.png">
+                            <h3>Chicken Noodle Soup</h3>
+                            <p>Top Underated Meal</p>
+                            <br>
+                            <p><i>$8 - $12 On average</i></p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+<!-----------------------------------Food Suggestions [END]----------------------------------->
+            
+<!-----------------------------------Singapore Hawkers Map----------------------------------->
+            <div class="map-area-holder">
+                <div class="map-area-section">
+                    <div class="map-text-holder">
+                        
+                        <div class="map-text">
+                        <h2>Top Singapore Hawkers</h2>
+                            <p>Singapore have over 400 Hawkers so choosing one can be difficult. Most Hawkers cater to a vairety of cultural food prefrences so there should be a flood of options for food. Here are our top recommendations for Hawker Centers to vist in Singapore:</p>
+                            <br>
+                            <ol>
+                                <li><a href="https://www.google.com/maps/place/Chinatown+Complex+Food+Centre/@1.28254,103.8409354,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xfa2fb3bc761a9168!8m2!3d1.28254!4d103.8431241" target="_blank">Chinatown Complex Food Centre</a></li>
+                                <li><a href="https://www.google.com/maps/place/Old+Airport+Road+Food+Centre+%26+Shopping+Mall/@1.3082405,103.8836558,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x29284a73f1c12cbd!8m2!3d1.3082405!4d103.8858445" target="_blank">Old Airport Road Food Centre</a></li>
+                                <li><a href="https://www.google.com/maps/place/Maxwell+Hawker+Center/@1.2803569,103.8423917,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x4baba2ca69db9ab8!8m2!3d1.2803569!4d103.8445804" target="_blank">Maxwell Hawker Centre</a></li>
+                                <li><a href="https://www.google.com/maps/place/Tiong+Bahru+Food+Centre/@1.2850573,103.8306931,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x9da47ec45aed9959!8m2!3d1.2850573!4d103.8328818" target="_blank">Tiong Bahru Food Centre</a></li>
+                                <li><a href="https://www.google.com/maps/place/Chomp+Chomp+Food+Centre/@1.3642285,103.8644117,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xc3448e97075e75a4!8m2!3d1.3642285!4d103.8666004" target="_blank">Chomp Food Centre</a></li>
+                                <li><a href="https://www.google.com/maps/place/Satay+by+the+Bay/@1.2821346,103.8666841,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x18350fb57623ecbe!8m2!3d1.2821346!4d103.8688728" target="_blank">Satay by the Bay Hawker</a></li>
+                                <li><a href="https://www.google.com/maps/place/Makansutra+Gluttons+Bay/@1.2894514,103.8546754,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x6c0c3f2856edd6b7!8m2!3d1.2894514!4d103.8568641" target="_blank">Makansutra Gluttons Bay</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="location-map">
+                        <div class="map-holder">
+                            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HmE_9i2Q7aH7WWW5_T73kRqcO7wm_C0T" width="640" height="480"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+<!-----------------------------------Singapore Hawkers Map [END]----------------------------------->
+<!-----------------------------------Footer----------------------------------->
+           
+            <div class="footer-section">
+                <div class="footer-holder">
+                    <div class="footer">
+                        <div class="logo-footer">
+                            <h1>Singapore Tourist Guide</h1>
+                            <h5>&#169; 2020, Designed and Coded by Alexander Tweed</h5>
+                        </div>
+                        <div class="navigation-footer">
+                            <ul class="navigation-footer-text">
+                                <h3>Search by:</h3>
+                                <li><a href="directory.html">Food &#38; Drink</a></li>
+                                <li><a href="#">Activities</a></li>
+                                <li><a href="#">Hidden Gems</a></li>                            
+                                <li><a href="#">Evening</a></li>
+                                <li><a href="#">Other</a></li> 
+                            </ul>                           
+                        </div>
+                        <div class="help-footer">
+                            <ul class="help-footer-text">
+                                <h3>Need Help?</h3>
+                                <li><a href="#">Frequently Asked Questions</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="newsletter-footer">
+                            <form action="">
+                                <h3>Join Our Newsletter</h3>
+                                <p>Want to get discounts on activities and hear about new places to visit in Singapore? Why not join our newsletter!</p>
+                                <div class="email-area">
+                                    <input class="email" placeholder="Enter your email">
+                                    <button class="nl-signup">Sign Up</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="social-icons">
+                                    <ul class="icons">
+                                        <li><a href="https://www.facebook.com" target="_blank"><img src="social-icons/facebook-logo.svg"></a></li>
+                                        <li><a href="https://www.instagram.com" target="_blank"><img src="social-icons/instagram-logo.svg"></a></li>
+                                        <li><a href="https://www.twitter.com" target="_blank"><img src="social-icons/twitter-logo.svg"></a></li>
+                                    </ul>
+                                </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+             
+        </body>
+</html>

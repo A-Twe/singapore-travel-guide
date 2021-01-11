@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+    
+    <html>  
+        <head>
+            <title> Tourist guide to Singapore</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        
+<!--PLEASE READ-->
+        
+<!--There are a lot of potential pages to visit on the site; however as this site is not being lauched I have created main content pages for different sections of the site. The pages with content are listed below:
+
+- Homepage
+
+- 'Food & Drink' directory page (can be assessed through the 'start exploring' button in the main heading or by hovering over 'explore' in the header.
+
+- Contact Page
+
+- Hawker Center Page (Found under 'Our Top Recommendations' on homepage)
+
+- Sentosa Page (Found under 'Our Top Recommendations' on homepage)
+-->
+        
+<!--I Alexander Tweed declare that I am the sole owner of this assignment and the work is a result of my own investigations, except where otherwise stated. All references have been duly cited-->
+
+        
+        <body>
+            <script src="index.js"></script>
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            
+            
+<!-----------------------------------Main navigation----------------------------------->
+            <nav>
+                <div class="logo">
+                    <h1 class="logo-text"><a href="index.html">Singapore Tourist Guide</a></h1>
+                </div>
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li class="explore-dd">
+                            <a href="#">Explore</a>
+                            <ul> 
+                                <li><a href="directory.html">Food &#38; Drink</a></li>
+                                <li><a href="#">Activities</a></li>
+                                <li><a href="#">Hidden Gems</a></li>
+                                <li><a href="#">Evening</a></li>
+                                <li><a href="#">Other</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html"> Contact</a></li>
+                    </ul>
+                <span onclick="openNav()" class="start-exploring-btn">Start Exploring</span>
+            </nav>
+            
+<!-----------------------------------Overlay Section----------------------------------->
+           
+            <div id="page-overlay" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="directory.html">Food &#38; Drink</a>
+                    <a href="#">Activities</a>
+                    <a href="#">Hidden Gems</a>
+                    <a href="#">Evening</a>
+                    <a href="#">Other</a>
+                </div>
+            </div>
+            
+<!-----------------------------------Overlay Section [END]----------------------------------->
+            <button onclick="topFunction()" id="topBtn" title="Scroll to top">&#8593;</button>
+
+<!-----------------------------------Corona banner----------------------------------->
+
+            <h4 class="corona-banner">
+            The Coronavius might impact some attractions - Please check before you visit
+            </h4>
+<!-----------------------------------Corona banner [END]----------------------------------->
+
+<!-----------------------------------Initial homepage content----------------------------------->
+
+            <div class="main-content-holder">
+                <div class="main-content-text">
+                    <div class="main-info"> 
+                        <h3 style="font-weight: 600; color: #DE1A3E;">*Including some hidden gems
+                        </h3>
+                        <h1 class="main-content-text-title">Discover Singapore's Best Attractions</h1>
+                        <h3>Singapore is full of activities and fun places to visit. <b>However</b>, If you're new to Singapore, choosing something can seem like a huge task with so many options.<b>So here's our top picks of places to visit!</b> </h3>
+                        <div class="start">
+                            <span onclick="openNav()" class="start-btn">Start Exploring</span>
+                            <h3 class="contact-home"><a href="contact.html"> <u>Any Questions?</u> </a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="animation">
+                        <lottie-player src="https://assets2.lottiefiles.com/temp/lf20_FYZYCn.json" speed="1" autoplay></lottie-player>
+                    </div>
+                </div>
+            </div>
+<!-----------------------------------Initial homepage content [END]---------------------------------->
+
+<!-----------------------------------Information sources| Logos----------------------------------->
+
+            <div class="info-sources">
+                <ul class="logos">
+                  <li><a href="https://www.visitsingapore.com/en/" target="_blank"><img src="sources-logos/singapore-tourism-board-logo.svg"></a></li>
+                  <li><a href="https://www.singaporeair.com/en_UK/us/plan-travel/packages/singapore-stopover-holiday/" target="_blank"><img src="sources-logos/singapore-airlines-logo.svg" alt="Singapore Airlines logo"></a></li>
+                  <li><a href="https://www.tripadvisor.co.uk/Attractions-g294262-Activities-Singapore.html" target="_blank"><img src="sources-logos/tripadvisor-logo.svg" alt="Trip advisor logo"></a></li>
+                  <li><a href="https://www.lonelyplanet.com/singapore/top-things-to-do" target="_blank"><img src="sources-logos/lonely-planet-logo.svg" alt="Lonley Planet logo"></a></li>
+                  <li><a href="https://www.marinabaysands.com/attractions.html" target="_blank"><img src="sources-logos/marina-bay-logo.svg" alt="Marina Bay Sands logo"></a></li>
+                </ul>
+            </div>
+<!-----------------------------------Information sources | Logos [END]------------------------------->
+            
+<!-----------------------------------Local activities----------------------------------->
+
+            <div class="local-activities-holder">
+                <div class="local-activities">
+                    <div class="local-activities-text">
+                        <h4>Shhhh!</h4>
+                        <h1>Secret Singapore locations</h1>
+                        <h3>Want to avoid crowded tourist areas? Here's our suggestion of secret places to visit</h3>
+                        <button>Take me</button>
+                    </div>
+                    <div class="local-activities-map">
+                        <div class="map">
+                            <img src="homepage-images/map.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-----------------------------------Local activities [END]----------------------------------->
+            
+<!-----------------------------------Directory tabs----------------------------------->
+            <div class="directory-section">
+                <div class="directory-holder">
+                    <div class="directory-elements">
+                        <a href="directory.html" class="food-drink">
+                            <h2>Food &#38; Drink</h2>
+                            <img src="icons/food-drink.svg">                      
+                        </a>
+                        <div class="activities">
+                            <h2>Actvities</h2>
+                            <img src="icons/activity.svg">
+                        </div>
+                        <div class="hidden-gems">
+                            <h2>Hidden Gems</h2>
+                            <img src="icons/hidden-gems.svg">
+                        </div>
+                        <div class="evening">
+                            <h2>Evening</h2>
+                            <img src="icons/evening.svg">
+                        </div>
+                        <div class="other">
+                            <h2>Other</h2>
+                            <img src="icons/other.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-----------------------------------Directory tabs [END]----------------------------------->
+            
+            
+<!-----------------------------------Top recommendations----------------------------------->
+            <div class="breaker">
+                <h2>Our Top Recommendations</h2>
+            </div>
+<!-----------------------------------Top recommendations heading [END]----------------------------------->
+            
+
+<!-----------------------------------Top recommendations-----------------------------------> 
+
+            <div class="additional">
+                <div class="additional-holder">
+                    <div class="card">
+                        <a href="hawker.html">
+                            <div class="card-image-holder">
+                                <div class="card-image"> 
+                                    <img src="homepage-images/hawker.jpg" alt="Singapore Hawker Centers">
+                                </div>
+                            </div>
+                            <div class="card-text-holder">
+                                <div class="card-text">
+                                    <h1>Hawker Centres</h1>
+                                    <p>Singapore is famous for it's love of food which is shown by the 114 hawkers centres throughout Singapore. This local delight is something you don't want to miss!</p>
+                                    <a href="hawker.html"><button>More Info</button></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                     
+ <!----Hawker centres---->
+                    
+                    <div class="card">
+                        <a href="sentosa.html">
+                            <div class="card-image-holder">
+                                <div class="card-image"> 
+                                    <img src="homepage-images/sentosa.jpg" alt="Sentosa Island Singapore">
+                                </div>
+                            </div>
+                            <div class="card-text-holder">
+                                <div class="card-text">
+                                    <h1>Sentosa</h1>
+                                    <p>Sentosa is actually a man-made island built by Singapore! With everything from Universial Studios to Casino's, Sentosa has something for everyone </p>
+                                    <a href="sentosa.html"><button>More Info</button></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+<!----Sentosa card---->
+                    
+                    <div class="card">
+                        <div class="card-image-holder">
+                            <div class="card-image"> 
+                                <img src="homepage-images/gardens-by-the-bay.jpg" alt="Gardens by the Bay Singapore">
+                            </div>
+                        </div>
+                        <div class="card-text-holder">
+                            <div class="card-text">
+                                <h1>Gardens by the Bay</h1>
+                                <p>Gardens by the bay is a key aspect to Singapore's "City in a Garden" vision. Located in central Singapore, this is a great place for a day trip and easily accessible</p>
+                                <a href=""><button>More Info</button></a>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+            
+<!----Gardens by the bay card---->
+
+<!-----------------------------------Top recommendations [END]----------------------------------->
+
+<!-----------------------------------Transport tips----------------------------------->
+
+             <div class="transport-tips-holder">
+                <div class="transport-tips">
+                    <div class="transport-tips-graphic">
+                        <div class="graphic">
+                            <img src="homepage-images/mrt.svg">
+                        </div>
+                    </div>
+                    <div class="transport-tips-text">
+                        <h1>Singapore Transport Tips</h1>
+                        <h3>There are many options to travel around Singapore. Avoid spending a fortune on taxis by using some of our transport tips</h3>
+                        <button>Learn More</button>
+                    </div>
+                    
+                </div>
+            </div>
+<!-----------------------------------Transpor tips [END]----------------------------------->
+
+<!-----------------------------------Quick suggestions heading----------------------------------->
+            
+            <div class="breaker" style="margin-top: 15px;">
+                <h2>Quick suggestions</h2>
+            </div>
+            
+<!-----------------------------------Quick suggestions heading [END]----------------------------------->
+            
+<!-----------------------------------Quick suggestions----------------------------------->
+
+            <div class="quick-suggestions-section">
+                <div class="quick-suggestions-holder">
+                    <div class="vertical-element">
+                        <div class="horizontal-element">
+                            <div class="item">
+                                <div class="img-holder">
+                                    <img src="homepage-images/botanic-gardens.jpg" alt="Botanic gardens sigapore">
+                                </div>
+                                <div class="suggestion-text-holder">
+                                    <h4 style="color:#8C8C8C;">Activities</h4>
+                                    <h1>Botanic Gardens</h1>
+                                    <p>Founded in 1859, the botanic gardens is the first UNESCO heritage site in Singapore</p>
+                                </div>
+                                <div class="suggestion-button">
+                                    <button>More Info</button>
+                                </div>
+                            </div>
+<!----Botanic Gardens---->
+                            <div class="item">
+                                <div class="img-holder">
+                                    <img src="homepage-images/marina-bay-sands.jpg" alt="Marina Bay Sands photo">
+                                </div>
+                                <div class="suggestion-text-holder">
+                                    <h4 style="color:#8C8C8C;">Activities &#38; Evening</h4>
+                                    <h1>Marina Bay Sands</h1>
+                                    <p>Singapore's most iconic hotel and the world's largest rooftop infinity Pool</p>
+                                </div>
+                                <div class="suggestion-button">
+                                    <button>More Info</button>
+                                </div>
+                            </div>
+                        </div>
+<!----Marina Bay Sands---->
+                        <div class="horizontal-element">
+                            <div class="item">
+                                <div class="img-holder">
+                                    <img src="homepage-images/clarke-quay.jpg" alt="Clarke quay Singapore sky view">
+                                </div>
+                                <div class="suggestion-text-holder">
+                                    <h4 style="color:#8C8C8C;">Evening</h4>
+                                    <h1>Clarke Quay</h1>
+                                    <p>Live music, clubs and resturants, Clarke Quay is a great night out</p>
+                                </div>
+                                <div class="suggestion-button">
+                                    <button>More Info</button>
+                                </div>
+                            </div>
+<!----Clarke Quay---->  
+                            <div class="item">
+                                <div class="img-holder">
+                                    <img src="homepage-images/ion-orchard.jpg" alt="Orchard Road Shopping center">
+                                </div>
+                                <div class="suggestion-text-holder">
+                                    <h4 style="color:#8C8C8C;">Activities &#38; Food</h4>
+                                    <h1>ION Orchard</h1>
+                                    <p>Home to 300+ brands including fashion, dining, beauty and lifestyle</p>
+                                </div>
+                                <div class="suggestion-button">
+                                    <button>More Info</button>
+                                </div>
+                            </div>
+                        </div>
+<!----ION Orchard---->
+                           <div class="horizontal-element">
+                            <div class="item">
+                                <div class="img-holder">
+                                    <img src="homepage-images/merlion.jpg" alt="Merlion fountian spraying water">
+                                </div>
+                                <div class="suggestion-text-holder">
+                                    <h4 style="color:#8C8C8C;">Activities</h4>
+                                    <h1>The Merlion</h1>
+                                    <p>The Merlion is Singapore's mascot and there are 2 statues on the island</p>
+                                </div>
+                                <div class="suggestion-button">
+                                    <button>More Info</button>
+                                </div>
+                            </div>
+<!----Merlion---->
+                            <div class="item">
+                                <div class="img-holder">
+                                    <img src="homepage-images/little-india.jpg" alt="Indian style architecture">
+                                </div>
+                                <div class="suggestion-text-holder">
+                                    <h4 style="color:#8C8C8C;">Hidden Gems &#38; Food</h4>
+                                    <h1>Little India</h1>
+                                    <p>Home to 300+ brands including fashion, dining, beauty and lifestyle</p>
+                                </div>
+                                <div class="suggestion-button">
+                                    <button>More Info</button>
+                                </div>
+                            </div>
+<!----Little India---->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="questions">
+                <a href="contact.html">
+                <h2 style="color: white">Any Questions? Submit your enquires through our contact form</h2>
+                </a>
+            </div>
+<!-----------------------------------Quick suggestions [END]----------------------------------->
+
+<!-----------------------------------Footer----------------------------------->
+            <div class="footer-master"></div>
+            <div class="footer-section">
+                <div class="footer-holder">
+                    <div class="footer">
+                        <div class="logo-footer">
+                            <h1>Singapore Tourist Guide</h1>
+                            <h5>&#169; 2020, Designed and Coded by Alexander Tweed</h5>
+                        </div>
+                        <div class="navigation-footer">
+                            <ul class="navigation-footer-text">
+                                <h3>Search by:</h3>
+                                <li><a href="directory.html">Food &#38; Drink</a></li>
+                                <li><a href="#">Activities</a></li>
+                                <li><a href="#">Hidden Gems</a></li>                            
+                                <li><a href="#">Evening</a></li>
+                                <li><a href="#">Other</a></li> 
+                            </ul>                           
+                        </div>
+                        <div class="help-footer">
+                            <ul class="help-footer-text">
+                                <h3>Need Help?</h3>
+                                <li><a href="#">Frequently Asked Questions</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="newsletter-footer">
+                            <form action="">
+                                <h3>Join Our Newsletter</h3>
+                                <p>Want to get discounts on activities and hear about new places to visit in Singapore? Why not join our newsletter!</p>
+                                <div class="email-area">
+                                    <input class="email" placeholder="Enter your email">
+                                    <button class="nl-signup">Sign Up</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="social-icons">
+                                    <ul class="icons">
+                                        <li><a href="https://www.facebook.com" target="_blank"><img src="social-icons/facebook-logo.svg"></a></li>
+                                        <li><a href="https://www.instagram.com" target="_blank"><img src="social-icons/instagram-logo.svg"></a></li>
+                                        <li><a href="https://www.twitter.com" target="_blank"><img src="social-icons/twitter-logo.svg"></a></li>
+                                    </ul>
+                                </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+    
+        </body>
+    
+    
+    
+    
+    
+    </html>

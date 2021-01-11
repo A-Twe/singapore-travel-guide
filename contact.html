@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+    
+    <html>  
+        <head>
+            <title> Tourist guide to Singapore</title>
+            <link rel="stylesheet" href="contact.css">
+        </head>
+        
+        <body>
+            <script src="index.js"></script>            
+            
+<!-----------------------------------Main navigation----------------------------------->
+            <nav>
+                <div class="logo">
+                    <h1 class="logo-text"><a href="index.html">Singapore Tourist Guide</a></h1>
+                </div>
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li class="explore-dd">
+                            <a href="#">Explore</a>
+                            <ul> 
+                                <li><a href="directory.html">Food &#38; Drink</a></li>
+                                <li><a href="#">Activities</a></li>
+                                <li><a href="#">Hidden Gems</a></li>
+                                <li><a href="#">Evening</a></li>
+                                <li><a href="#">Other</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html"> Contact</a></li>
+                    </ul>
+                <span onclick="openNav()" class="start-exploring-btn">Start Exploring</span>
+            </nav>
+            
+<!-----------------------------------Overlay Section----------------------------------->
+           
+            <div id="page-overlay" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="directory.html">Food &#38; Drink</a>
+                    <a href="#">Activities</a>
+                    <a href="#">Hidden Gems</a>
+                    <a href="#">Evening</a>
+                    <a href="#">Other</a>
+                </div>
+            </div>
+            
+<!-----------------------------------Overlay Section [END]----------------------------------->
+
+<!-----------------------------------Corona banner----------------------------------->
+
+            <h4 class="corona-banner">
+            The Coronavius might impact some attractions - Please check before you visit
+            </h4>
+<!-----------------------------------Corona banner [END]----------------------------------->
+<!-----------------------------------Contact Area----------------------------------->
+            
+            <div class="contact-section">
+                <div class="contact-holder">
+                    <div class="contact-content">
+                        <div class="contact-fill-section">
+                            <div class="contact-header">
+                                <h2>Have a Question?</h2>
+                                <p>Want to find out more details or a location or struggling to find something on our site? Feel free to drop a message using our contact form below!</p>
+                            </div>
+                            <div class="contact-fill-zone">
+                                <div class="fill-zone">
+                                    <h4>Your Name</h4>
+                                    <input class="name" placeholder="Enter your Name">
+                                </div>
+                                <div class="fill-zone">
+                                    <h4>Your Email</h4>
+                                    <input class="email" placeholder="Enter your Email">
+                                </div>  
+                                <div class="fill-zone">
+                                    <h4>Your Message</h4>
+                                    <input class="message" placeholder="Type your message">
+                                </div>
+                                <button class="submit">Send Message</button>
+                            </div>
+                        </div>
+                        <div class="contact-graphic-section">
+                            <div class="contact-graphic">
+                                <img src="contact-page/contact-graphic.svg" class="merlion">
+                            </div>
+                            <div class="contact-details">
+                                <div class="location">
+                                    <img src="contact-page/location-icon.svg" style="width: 3%">
+                                    <p>123 Fake Street, United Kingdom</p>
+                                </div>
+                                <div class="phone">
+                                    <img src="contact-page/phone-icon.svg" style="width: 3.7%">
+                                    <p>+00 123456789</p>
+                                </div>
+                                <div class="email2">
+                                    <img src="contact-page/mail-icon.svg" style="width: 4%">
+                                    <p>fake-email@mail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-----------------------------------Contact Area [END]----------------------------------->
+            
+<!-----------------------------------Footer----------------------------------->
+           
+            <div class="footer-section">
+                <div class="footer-holder">
+                    <div class="footer">
+                        <div class="logo-footer">
+                            <h1>Singapore Tourist Guide</h1>
+                            <h5>&#169; 2020, Designed and Coded by Alexander Tweed</h5>
+                        </div>
+                        <div class="navigation-footer">
+                            <ul class="navigation-footer-text">
+                                <h3>Search by:</h3>
+                                <li><a href="directory.html">Food &#38; Drink</a></li>
+                                <li><a href="#">Activities</a></li>
+                                <li><a href="#">Hidden Gems</a></li>                            
+                                <li><a href="#">Evening</a></li>
+                                <li><a href="#">Other</a></li> 
+                            </ul>                           
+                        </div>
+                        <div class="help-footer">
+                            <ul class="help-footer-text">
+                                <h3>Need Help?</h3>
+                                <li><a href="#">Frequently Asked Questions</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="newsletter-footer">
+                            <form action="">
+                                <h3>Join Our Newsletter</h3>
+                                <p>Want to get discounts on activities and hear about new places to visit in Singapore? Why not join our newsletter!</p>
+                                <div class="email-area">
+                                    <input class="email" placeholder="Enter your email">
+                                    <button class="nl-signup">Sign Up</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="social-icons">
+                                    <ul class="icons">
+                                        <li><a href="https://www.facebook.com" target="_blank"><img src="social-icons/facebook-logo.svg"></a></li>
+                                        <li><a href="https://www.instagram.com" target="_blank"><img src="social-icons/instagram-logo.svg"></a></li>
+                                        <li><a href="https://www.twitter.com" target="_blank"><img src="social-icons/twitter-logo.svg"></a></li>
+                                    </ul>
+                                </div>
+                    </div>
+                </div>
+            </div>
+            
+        </body>
+</html>

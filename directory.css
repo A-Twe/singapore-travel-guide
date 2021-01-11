@@ -1,0 +1,459 @@
+/* Colors Palette: #FF5D5D - Red | #FAF1ED - Light Red | #F0B45A - Yellow | #2585BF -  Blue*/
+
+@import url("https://use.typekit.net/fuh7nqx.css");
+
+*{  
+    margin: 0;
+    padding: 0;
+    font-family: sofia-pro ,sans-serif;
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color:#3e3e3e;
+}
+
+@keyframes load-in {
+	 0% {
+		 transform: scale(0);
+	}
+	 25% {
+		 transform: scale(1.2);
+	}
+	 50% {
+		 transform: scale(1);
+	}
+	 75% {
+		 transform: scale(1.2);
+	}
+	 100% {
+		 transform: scale(1);
+    }
+}
+/*-----------------------------------Main navigation-----------------------------------*/
+.logo{
+    width: auto;
+    height: auto;
+    margin: 5px;
+}
+.logo h1{
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0.4rem 0rem;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 4rem;
+    background-color: white;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    position: relative;
+}
+.main-nav li{
+    list-style: none;
+}
+.main-nav li:hover{
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+.main-nav a{
+    color: #3e3e3e;
+    text-decoration: none;
+    letter-spacing: 1 px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.start-exploring-btn{
+    text-decoration: none;
+    padding: 0.5rem 1.1rem;
+    border-color: #3e3e3e;
+    background: #F22233;
+    border-radius: 10px;;
+    font-weight: 400;
+    font-size: 1em;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+}
+.start-exploring-btn:hover{
+    background: #3e3e3e;
+    color:#ffffff;
+    transition: 0.2s ease-in;
+}
+.explore-dd ul{
+    position: absolute;
+    display: none ;
+    z-index: 1;
+    color: white;
+    border: 0.5px solid #3e3e3e;
+}
+.explore-dd ul li:hover{
+    filter: invert();
+    background: white;
+    cursor: pointer;
+    transition:ease-in 0.2s;
+}
+.explore-dd li{
+    padding: 18px 10px;
+}
+.explore-dd:hover > ul{
+    display:block;
+    transition:ease-in 0.2s;
+    background: white;
+}
+.explore-dd li a{
+    font-weight: lighter;
+    color: black;
+    font-size: 0.9rem;
+}
+/*-----------------------------------Overlay-----------------------------------*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 3;
+    left: 0;
+    top: 0;
+    background-color: rgb(253, 246, 246, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s; 
+}
+.overlay a:hover, .overlay a:focus {
+    text-decoration: underline;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+/*Assistance on smaller screens - less than 450 pixels will update font size and close button to avoid overlap*/
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/*-----------------------------------Overlay [END]-----------------------------------*/
+
+/*-----------------------------------Main navigation [END]-----------------------------------*/
+
+/*-----------------------------------Corona banner-----------------------------------*/
+.corona-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #F2B544;
+    color: black;
+    font-weight: 500;     
+}
+/*-----------------------------------Corona banner [END]-----------------------------------*
+
+/*-----------------------------------Breaker-----------------------------------*/
+.breaker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.breaker h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.breaker h2:before,
+.breaker h2:after {
+    content: "";
+    border-top: 1.9px solid #3e3e3e;
+    flex: 1;
+    margin: 0 20px 0 20px;
+}
+/*-----------------------------------Breaker [END]-----------------------------------*/
+
+/*-----------------------------------Main Section-----------------------------------*/
+
+.main-section{
+    width: 95%;
+    margin: auto;
+}
+.main-section-holder{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px 0;
+}
+.main-image-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E7D1AE;
+    width: 30%;
+    height: 75vh;
+    border-radius: 35px;
+    text-align: center;
+}
+.main-image-section h2{
+    padding-bottom: 25px;
+}
+.main-image-section p{
+    padding: 0 8%;
+}
+.main-image-section lottie-player{
+    margin:auto;
+    width: 90%;
+}
+.main-content{
+    width: 70%;
+}
+.main-content{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-content-food-category-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center
+}
+.card1, .card2, .card3, .card4{
+    display: flex;
+    flex-direction: column;
+    height: 26vh;
+    width: 21vh;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    animation-name: load-in;
+    animation-duration: 700ms;
+    animation-delay: 200ms;
+}
+.main-content-food-category-cards img{
+    width: 25%;
+    padding-bottom: 15%;
+}
+.main-content-food-category-cards h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.main-content-food-category-cards button{
+    border-style: none;
+    width: 30%;
+    height: 25%;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1.1rem
+}
+.main-content-food-category-cards button:hover{
+    filter: invert();
+}
+.main-content-food-category-cards a{
+    border-style: none;
+    width: 30%;
+    height: 25%;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    background: #efefef;
+    padding-top: 8%;
+}
+.main-content-food-category-cards a:hover{
+    filter: invert();
+}
+.main-content-drink-categories{
+    padding-top: 5%
+}
+.main-content-drink-category-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.card5, .card6 {
+    display: flex;
+    height: 10vh;
+    width: 30%;
+    align-items: center;
+    justify-content:space-around;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    animation-name: load-in;
+    animation-duration: 700ms;
+    animation-delay: 200ms;
+    background: white;
+    cursor: pointer;
+}
+.card5:hover{
+    filter: invert();
+    transition: 0.3s ease;
+}
+.card6:hover{
+    filter: invert();
+    transition: 0.3s ease;
+}
+
+.main-content-drink-category-cards h2{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.main-content-drink-category-cards img{
+    width: 10%;
+}
+
+
+
+/*-----------------------------------Main Section [END]-----------------------------------*/
+
+/*-----------------------------------Footer-----------------------------------*/
+.footer-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FAF1ED;
+    height: 35vh;
+    overflow: hidden;
+}
+.footer-holder{
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footer h3{
+    font-weight: 600;
+}
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:5%;
+    padding-left: 20px
+}
+.social-icons li{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.social-icons img{
+    width:60%
+}
+.social-icons img:hover{
+    filter: invert();
+    transition: 0.1s ease-in;
+}   
+.logo-footer{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    vertical-align: center;
+    border-right: 1px solid;
+}
+.navigation-footer{
+    display: flex;
+    width:20%;
+    justify-content: space-around;
+    align-items: center;
+}
+.navigation-footer li, a{
+    list-style: none;
+    text-decoration: none;
+    padding: 5px 0;
+}
+.navigation-footer li:hover{
+    text-decoration: underline;
+}
+.help-footer{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+.help-footer li, a{
+    list-style: none;
+    text-decoration: none;
+    padding: 5px 0;
+}
+.help-footer li:hover{
+    text-decoration: underline;
+}
+.newsletter-footer{
+    width:30%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: 0.5px solid;
+}
+.newsletter-footer p{
+    padding: 5px 5px;
+    font-weight: lighter;
+    color:#3e3e3e;
+}
+.newsletter-footer img{
+    width: 8%;
+}
+.email-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+.email{
+    height: 5vh;
+    border-style: none;
+    padding-left: 5px;
+}
+.nl-signup{
+    height: 5vh;
+    width:10vh;
+    border-style: none;
+    background: #FF5D5D;
+    color: white;
+    cursor: pointer;
+}
+.nl-signup:hover{
+    transition: 0.2s ease-in;
+    background: #3e3e3e;
+    color:white;
+}
+/*-----------------------------------Footer end-----------------------------------*/

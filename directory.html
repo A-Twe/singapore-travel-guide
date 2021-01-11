@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+    
+    <html>  
+        <head>
+            <title>Singapore Travel | Sentosa</title>
+            <link rel="stylesheet" href="directory.css">
+        </head>
+        
+        <body>
+            <script src="index.js"></script>
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            
+            
+<!-----------------------------------Main navigation----------------------------------->
+            <nav>
+                <div class="logo">
+                    <h1 class="logo-text"><a href="index.html">Singapore Tourist Guide</a></h1>
+                </div>
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li class="explore-dd">
+                            <a href="#">Explore</a>
+                            <i class="fa fa-caret-down"></i>
+                            <ul> 
+                                <li><a href="directory.html">Food &#38; Drink</a></li>
+                                <li><a href="#">Activities</a></li>
+                                <li><a href="#">Hidden Gems</a></li>
+                                <li><a href="#">Evening</a></li>
+                                <li><a href="#">Other</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html"> Contact</a></li>
+                    </ul>
+                <span onclick="openNav()" class="start-exploring-btn">Start Exploring</span>
+            </nav>
+            
+<!-----------------------------------Overlay Section----------------------------------->
+           
+            <div id="page-overlay" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="directory.html">Food &#38; Drink</a>
+                    <a href="#">Activities</a>
+                    <a href="#">Hidden Gems</a>
+                    <a href="#">Evening</a>
+                    <a href="#">Other</a>
+                </div>
+            </div>
+            
+<!-----------------------------------Overlay Section [END]----------------------------------->
+
+<!-----------------------------------Corona banner----------------------------------->
+
+            <h4 class="corona-banner">
+            The Coronavius might impact some attractions - Please check before you visit
+            </h4>
+<!-----------------------------------Corona banner [END]----------------------------------->
+ 
+
+<!-----------------------------------Initial Section----------------------------------->
+            <div class="main-section">
+                <div class="main-section-holder">
+                    <div class="main-image-section">
+                        <div class="main-image-section-holder">
+                            <div class="main-image-head">
+                                <div class="breaker" style="margin-top: 15px;">
+                                    <h2>Food &#38; Drink</h2>
+                                </div>
+                                <p>Singapore is famous for it's love of food and drink. There is a huge diverse selection of cusine options so there is something for everyone!</p>
+                                <div class="image">
+                                    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_JFWxSS.json"  background="rgba(0, 0, 0, 0)"  speed="1" loop autoplay ></lottie-player>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content">
+                        <div class="main-content-food-categories">
+                            <h2 style="text-align: center; padding-bottom: 20px;">Food Options</h2>
+                            <div class="main-content-food-category-cards">
+                                <div class="card1">
+                                    <img src="icons/local-food.svg">
+                                    <h2>Local Cusine</h2>
+                                    <a href="hawker.html" class="go">&#8594;</a>
+                                </div>
+                                <div class="card2">
+                                    <img src="icons/asian-food.svg" style="width: 21%">
+                                    <h2>Asian</h2>
+                                    <button class="go">&#8594;</button>
+                                </div>
+                                <div class="card3">
+                                    <img src="icons/european-icon.svg">
+                                    <h2>European</h2>
+                                    <button class="go">&#8594;</button>
+                                </div>
+                                <div class="card4">
+                                    <img src="icons/american-icon.svg">
+                                    <h2>American</h2>
+                                    <button class="go">&#8594;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-content-drink-categories">
+                            <h2 style="text-align: center; padding-bottom: 20px;">Drink Options</h2>
+                            <div class="main-content-drink-category-cards">
+                                <div class="card5">
+                                    <h2>Bar's &#38; Pubs</h2>
+                                    <img src="icons/beer-icon.svg">
+                                </div>
+                                <div class="card6">
+                                    <h2>Non-Alcoholic</h2>
+                                    <img src="icons/coffee-icon.svg" style="width: 8%;">  
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+<!-----------------------------------Footer----------------------------------->
+           
+            <div class="footer-section">
+                <div class="footer-holder">
+                    <div class="footer">
+                        <div class="logo-footer">
+                            <h1>Singapore Tourist Guide</h1>
+                            <h5>&#169; 2020, Designed and Coded by Alexander Tweed</h5>
+                        </div>
+                        <div class="navigation-footer">
+                            <ul class="navigation-footer-text">
+                                <h3>Search by:</h3>
+                                <li><a href="directory.html">Food &#38; Drink</a></li>
+                                <li><a href="#">Activities</a></li>
+                                <li><a href="#">Hidden Gems</a></li>                            
+                                <li><a href="#">Evening</a></li>
+                                <li><a href="#">Other</a></li> 
+                            </ul>                           
+                        </div>
+                        
+                        <div class="help-footer">
+                            <ul class="help-footer-text">
+                                <h3>Need Help?</h3>
+                                <li><a href="#">Frequently Asked Questions</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="newsletter-footer">
+                            <form action="">
+                                <h3>Join Our Newsletter</h3>
+                                <p>Want to get discounts on activities and hear about new places to visit in Singapore? Why not join our newsletter!</p>
+                                <div class="email-area">
+                                    <input class="email" placeholder="Enter your email">
+                                    <button class="nl-signup">Sign Up</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="social-icons">
+                                    <ul class="icons">
+                                        <li><a href="https://www.facebook.com" target="_blank"><img src="social-icons/facebook-logo.svg"></a></li>
+                                        <li><a href="https://www.instagram.com" target="_blank"><img src="social-icons/instagram-logo.svg"></a></li>
+                                        <li><a href="https://www.twitter.com" target="_blank"><img src="social-icons/twitter-logo.svg"></a></li>
+                                    </ul>
+                                </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+             
+        </body>
+</html>
